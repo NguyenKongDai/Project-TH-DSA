@@ -1,4 +1,6 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make.exe: *** No rule to make target 'all'.  Stop.
+ 
 # GNU Make 4.2.1
 # Built for Windows32
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Nov 01 15:38:26 2021
+# Make data base, printed on Mon Nov 01 15:48:59 2021
 
 # Variables
 
@@ -46,8 +48,8 @@ ONEDRIVE = C:\Users\Among\OneDrive - VNU-HCMUS
 MAVEN_HOME = C:\apache-maven-3.8.1
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -126,8 +128,6 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
-# makefile (from 'Makefile', line 1)
-CC = g++
 # environment
 JAVA_HOME = C:\Program Files\Java\jdk-15.0.2
 # environment
@@ -135,7 +135,7 @@ ONEDRIVECOMMERCIAL = C:\Users\Among\OneDrive - VNU-HCMUS
 # default
 MAKE_VERSION := 4.2.1
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
@@ -211,7 +211,7 @@ VSCODE_PID = 3264
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-OQBDNU7
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=15/126=12%
+# Load=99/1024=10%, Rehash=0, Collisions=15/118=13%
 
 # Pattern-specific Variable Values
 
@@ -219,9 +219,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-OQBDNU7
 
 # Directories
 
-# . (key c:/Users/Among/Desktop/Code/CPP/Data structure and Algorithm/TH/Project-TH-DSA, mtime 1635655352): 10 files, no impossibilities.
+# . (key c:/Users/Among/Desktop/Code/CPP/Data structure and Algorithm/TH/Project-TH-DSA, mtime 1635756515): 9 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -229,36 +229,33 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-OQBDNU7
 
 # Files
 
-all: main.o SparseTable.o
-#  Command line target.
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
-#  recipe to execute (from 'Makefile', line 4):
-	$(CC) main.o SparseTable.o -o main
-
 # Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-30 12:19:10
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 
 # Not a target:
-main.cpp:
+makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-30 12:17:30
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -266,76 +263,27 @@ main.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 13):
-	rm -f *.o
-	rm main.exe
-
-SparseTable.o: Week2/SparseTable.h Week2/SparseTable.cpp
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
-	$(CC) -g -c ./Week2/SparseTable.cpp
-
-main.o: main.cpp Week2/SparseTable.h
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := main.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := main.cpp Week2/SparseTable.h
-# automatic
-# | := 
-# automatic
-# < := main.cpp
-# automatic
-# ^ := main.cpp Week2/SparseTable.h
-# automatic
-# ? := main.cpp Week2/SparseTable.h
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 10):
-	$(CC) -g -c main.cpp
-
-# Not a target:
-Week2/SparseTable.h:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-30 12:15:07
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-Week2/SparseTable.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been upd 
-ated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/30=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 161 B / avg = 8 B
-# current buf: size = 8162 B / used = 161 B / count = 18 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 123 B / avg = 7 B
+# current buf: size = 8162 B / used = 123 B / count = 16 / avg = 7 B
 
-# strcache performance: lookups = 32 / hit rate = 43%
+# strcache performance: lookups = 19 / hit rate = 15%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/32=3%
-# Finished Make data base on Mon Nov 01 15:38:26 2021
+# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
+# Finished Make data base on Mon Nov 01 15:48:59 2021
 
  

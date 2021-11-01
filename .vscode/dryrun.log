@@ -1,7 +1,6 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe --dry-run --keep-going --print-directory
 make.exe: Entering directory 'c:/Users/Among/Desktop/Code/CPP/Data structure and Algorithm/TH/Project-TH-DSA'
-g++ -g -c main.cpp
-g++ -g -c ./Week2/SparseTable.cpp
-g++ main.o SparseTable.o -o main
 make.exe: Leaving directory 'c:/Users/Among/Desktop/Code/CPP/Data structure and Algorithm/TH/Project-TH-DSA'
+ 
+make.exe: *** No targets specified and no makefile found.  Stop.
  
